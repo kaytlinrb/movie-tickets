@@ -48,11 +48,15 @@ $(function() {
     var movieChoice = $("#movie-choice").val();
     var ageChoice = $("#age").val();
     var timeChoice = $("#time").val();
+    var ticketNumber = parseInt($("#quantity").val());
+    console.log(typeof ticketNumber);
+
 
     var newTicket = new Ticket(movieChoice, ageChoice, timeChoice);
     // var ticketPrice = priceAssign(newTicket);
     var ticketPrice = newTicket.priceAssign();
-    $("#ticket-info").append("<li>" + movieChoice + "</li>" + "<li>" + timeChoice + "</li>"+"<li>" + "$ " + ticketPrice + "</li>");
+    console.log(typeof ticketPrice);
+    $("#ticket-info").append("<li>" + movieChoice + "</li>" + "<li>" + timeChoice + "</li>"+"<li>" + "$ " + (ticketPrice * ticketNumber) + "</li>");
     $("#show-ticket").show();
   });
 
