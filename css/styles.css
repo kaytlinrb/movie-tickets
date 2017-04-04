@@ -1,0 +1,24 @@
+#show-ticket {
+  display: none;
+}
+body {
+  background-color: #eddf1c;
+}
+.batman-theater {
+  font-size: 75px;
+  padding-top: 5%;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+}
+.header {
+  height: 250px;
+  background-image: url(../img/Batsignal.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+img {
+  width: 100%;
+}
